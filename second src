@@ -1,0 +1,81 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package controle.de.funcionario;
+
+/**
+ *
+ * @author ALUNO
+ */
+public class Funcionario 
+{
+    private String matricula;
+    private String nome;
+    private String cargo;
+    private double salario;
+    
+    public Funcionario(String matricula, String nome, String cargo, double salario)
+            
+    {
+            this.matricula = matricula;
+            this.nome = nome;
+            this.cargo = cargo;
+            this.salario = salario;
+    }
+
+    Funcionario() {
+        
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    
+    public void reajustarSalario()
+    {
+        if(this.cargo.equalsIgnoreCase("gerente"))
+        {
+            this.salario=this.salario * 1.10;
+        }
+        else if(this.cargo.equalsIgnoreCase("vendedor"))
+        {
+            this.salario=this.salario * 1.05;
+        }
+        else
+        {
+            this.salario=this.salario * 1.01;
+        }
+    }
+
+   
+    }
+    
