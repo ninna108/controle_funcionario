@@ -1,0 +1,73 @@
+ Projeto Controle de Funcionário – Java
+Este é um projeto simples em Java desenvolvido com o objetivo de gerenciar informações de um funcionário, incluindo cálculo de reajuste salarial com base no cargo.
+
+Estrutura do Projeto
+O projeto contém duas classes no pacote controle.de.funcionario:
+
+Funcionario.java
+Classe que representa um funcionário da empresa, com os seguintes atributos:
+
+matricula (String)
+
+nome (String)
+
+cargo (String)
+
+salario (double)
+
+A classe possui métodos de acesso (get/set) e um método reajustarSalario() que aplica aumentos com base no cargo do funcionário:
+
+Gerente: aumento de 10%
+
+Vendedor: aumento de 5%
+
+Outros cargos: aumento de 1%
+
+ControleDeFuncionario.java
+Classe principal com o método main. Utiliza JOptionPane para:
+
+Capturar dados do funcionário por meio de janelas gráficas
+
+Exibir os dados informados
+
+Aplicar o reajuste de salário
+
+Exibir o salário reajustado
+
+Funcionalidades
+Cadastro de um funcionário via interface gráfica (JOptionPane)
+
+Reajuste automático de salário conforme cargo
+
+Exibição do salário antes e depois do reajuste
+
+Como Executar
+Compile os arquivos:
+
+javac controle/de/funcionario/*.java
+Execute a classe principal:
+
+java controle.de.funcionario.ControleDeFuncionario
+Siga as instruções exibidas em janelas de entrada (JOptionPane).
+
+Exemplo de Uso
+Entradas:
+Matrícula: 123
+
+Nome: Maria
+
+Cargo: Gerente
+
+Salário: 5000.0
+
+Saída:
+yaml
+Copiar
+Editar
+Matricula: 123
+Nome: Maria
+Cargo: Gerente
+Salario: 5000.0
+Salario Reajustado: 5500.0
+
+este projeto se encontra na MIT license
