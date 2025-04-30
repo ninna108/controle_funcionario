@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package controle.de.funcionario;
+
+import javax.swing.JOptionPane;
+
+public class ControleDeFuncionario 
+{
+
+    public static void main(String[] args)
+    {
+        Funcionario funcionario;
+        
+        funcionario = new Funcionario();
+       
+        
+        funcionario.setMatricula(JOptionPane.showInputDialog("digite a matricula"));
+        funcionario.setNome(JOptionPane.showInputDialog("digite o nome"));
+        funcionario.setCargo(JOptionPane.showInputDialog("digite o cargo"));
+        funcionario.setSalario(Double.parseDouble(JOptionPane.showInputDialog("digite o salario")));
+        
+        JOptionPane.showMessageDialog(null,"Matricula" + funcionario.getMatricula());
+        JOptionPane.showMessageDialog(null,"Nome" + funcionario.getNome());
+        JOptionPane.showMessageDialog(null,"Cargo" + funcionario.getCargo());
+        JOptionPane.showMessageDialog(null,"salario" + funcionario.getSalario());
+        
+        funcionario.reajustarSalario();
+        
+        JOptionPane.showMessageDialog(null,"Salario Reajustado" + funcionario.getSalario());
+        
+    }
+    
+}
